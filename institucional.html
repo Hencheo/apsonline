@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Institucional | APS - Associação Paranaense de Suinocultores</title>
+
+    <!-- External Assets -->
+    <link href="green-site/assets/css2_86e10c4bcbd4.css" rel="stylesheet" id="font-geist" />
+    <link href="green-site/assets/css2_8e191ef32247.css" rel="stylesheet" id="font-space-grotesk" />
+    <link href="digital-architect.aura.build/assets/css2_19fd9cc6b396.css" rel="stylesheet" id="font-inter" />
+    <script src="digital-architect.aura.build/assets/iconify-icon_d39ffc6e4c56.js"></script>
+
+    <!-- Project Styles -->
+    <link href="hero-styles.css" rel="stylesheet" />
+    <style>
+        :root {
+            --midnight: #0a0a0a;
+            --warm-white: #F9F4E8;
+            --primary-green: #2C7F39;
+            --accent-emerald: #10b981;
+        }
+
+        body {
+            background-color: var(--warm-white);
+            color: var(--midnight);
+        }
+
+        /* Transition Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-500 { transition-delay: 500ms; }
+
+        .inst-hero {
+            padding: 14rem 8% 10rem;
+            background: linear-gradient(135deg, #f3fcf5 0%, #F9F4E8 100%);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .inst-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(3.5rem, 10vw, 7rem);
+            color: var(--midnight);
+            font-weight: 800;
+            line-height: 0.85;
+            margin-bottom: 2.5rem;
+            position: relative;
+            z-index: 10;
+            letter-spacing: -0.05em;
+        }
+
+        .inst-title span {
+            display: block;
+            font-weight: 800;
+            color: var(--primary-green);
+        }
+
+        .inst-section {
+            padding: 8rem 8%;
+            background: var(--warm-white);
+            position: relative;
+        }
+
+        .inst-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 5rem;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .inst-content h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            color: var(--midnight);
+        }
+
+        .inst-content p {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: #444; /* Improved contrast */
+        }
+
+        .inst-image-box {
+            position: relative;
+            border-radius: 2rem;
+            overflow: hidden;
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.12);
+        }
+
+        .inst-image-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 1.2s ease;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-top: 6rem;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .value-card {
+            background: #ffffff;
+            padding: 4rem 3rem;
+            border-radius: 2rem;
+            border: 1px solid rgba(0,0,0,0.06);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+        }
+
+        .value-card:hover {
+            transform: translateY(-15px);
+            border-color: var(--accent-emerald);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
+        }
+
+        .value-card iconify-icon {
+            font-size: 3.5rem;
+            color: var(--primary-green);
+            margin-bottom: 2.5rem;
+        }
+
+        .value-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--midnight);
+        }
+
+        .value-card p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+
+        .board-section {
+            background: #ffffff;
+            padding: 8rem 8%;
+            border-top: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .board-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 5rem;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .board-member {
+            padding: 3rem;
+            border-radius: 1.8rem;
+            background: var(--warm-white);
+            border: 1px solid rgba(0,0,0,0.04);
+            transition: all 0.4s ease;
+        }
+
+        .board-member:hover {
+            background: #fff;
+            border-color: var(--accent-emerald);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+        }
+
+        .board-member h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--midnight);
+            margin-top: 0.5rem;
+        }
+
+        .board-member span {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--primary-green);
+            font-weight: 800;
+        }
+
+        /* Desfixar Header */
+        header.scrolled {
+            position: absolute !important;
+            background: transparent !important;
+            box-shadow: none !important;
+            border: none !important;
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+        }
+
+        header.scrolled .nav-links a {
+            color: var(--midnight) !important;
+        }
+
+        header.scrolled .logo-img {
+            filter: none !important;
+        }
+
+        /* --- Mobile Adaptations --- */
+        @media (max-width: 1024px) {
+            .inst-grid { grid-template-columns: 1fr; gap: 4rem; }
+            .values-grid { grid-template-columns: 1fr; gap: 3rem; }
+        }
+
+        @media (max-width: 768px) {
+            .inst-hero { 
+                padding: 10rem 8% 6rem; 
+                text-align: center;
+                background: linear-gradient(180deg, #f3fcf5 0%, #F9F4E8 100%);
+                hyphens: auto;
+            }
+            .inst-section, .board-section { padding: 4rem 8% 6rem; }
+            
+            .inst-content h2 { 
+                font-size: 2.2rem; 
+                margin-bottom: 2.5rem;
+            }
+
+            .inst-image-box { order: -1; margin-bottom: 2rem; }
+
+            /* Simplified Cards for Mobile */
+            .values-grid {
+                margin-top: 4rem;
+                gap: 4rem;
+            }
+
+            .value-card {
+                background: transparent;
+                padding: 0;
+                border: none;
+                box-shadow: none !important;
+                transform: none !important;
+            }
+
+            .value-card iconify-icon {
+                font-size: 2.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .value-card h3 {
+                font-size: 1.5rem;
+                border-left: 3px solid var(--accent-emerald);
+                padding-left: 1rem;
+            }
+
+            /* Simplified Board for Mobile */
+            .board-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                margin-top: 3rem;
+            }
+
+            .board-member {
+                background: transparent;
+                padding: 1rem 0;
+                border: none;
+                border-bottom: 1px solid rgba(0,0,0,0.08);
+                border-radius: 0;
+                transform: none !important;
+                box-shadow: none !important;
+            }
+
+            .board-member span {
+                font-size: 0.75rem;
+                color: var(--accent-emerald);
+            }
+
+            .board-member h4 {
+                font-size: 1.25rem;
+                margin: 0.2rem 0;
+            }
+            
+            .inst-title { 
+                font-size: 2rem;
+                letter-spacing: -0.02em; 
+                text-align: center;
+                line-height: 1.1;
+                width: 100%;
+                word-break: break-word;
+            }
+
+            .logo-img {
+                height: 42px;
+            }
+
+            .inst-hero .subheading {
+                font-size: 1rem !important;
+                line-height: 1.6;
+                padding: 0 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Menu Trigger -->
+    <button class="mobile-menu-trigger dark" id="menu-trigger" aria-label="Abrir Menu">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </button>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <nav class="mobile-nav-links">
+                <a href="index.html">
+                    <span class="link-num">01</span>
+                    <span class="link-text">Home</span>
+                    <iconify-icon icon="solar:round-alt-arrow-right-bold-duotone"></iconify-icon>
+                </a>
+                <a href="institucional.html" class="active">
+                    <span class="link-num">02</span>
+                    <span class="link-text">Institucional</span>
+                    <iconify-icon icon="solar:round-alt-arrow-right-bold-duotone"></iconify-icon>
+                </a>
+                <a href="index.html#events">
+                    <span class="link-num">03</span>
+                    <span class="link-text">Eventos</span>
+                    <iconify-icon icon="solar:round-alt-arrow-right-bold-duotone"></iconify-icon>
+                </a>
+                <a href="#">
+                    <span class="link-num">04</span>
+                    <span class="link-text">Culinária</span>
+                    <iconify-icon icon="solar:round-alt-arrow-right-bold-duotone"></iconify-icon>
+                </a>
+            </nav>
+
+            <div class="mobile-menu-footer">
+                <p class="footer-tagline">Conectando a Suinocultura Paranaense</p>
+                <a class="primary-btn" href="#">Acessar Área do Sócio</a>
+                <div class="mobile-socials">
+                    <iconify-icon icon="solar:camera-linear"></iconify-icon>
+                    <iconify-icon icon="solar:paper-plane-linear"></iconify-icon>
+                    <iconify-icon icon="solar:map-point-linear"></iconify-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="scrolled">
+        <a class="logo" href="index.html">
+            <img alt="APS Logo" class="logo-img" src="apsonline.com.br/assets/logooficialaps_74b1381baa76.png" />
+        </a>
+        <nav class="nav-links hidden md:flex">
+            <a href="institucional.html" class="active">Institucional</a>
+            <a href="index.html#events">Eventos</a>
+            <a href="#">Culinária</a>
+            <a href="#">Contato</a>
+        </nav>
+        <a class="primary-btn" href="#" style="padding: 0.8rem 1.8rem; font-size: 0.7rem;">Área do Sócio</a>
+    </header>
+
+    <!-- Hero -->
+    <section class="inst-hero">
+        <div class="role-section-grid-layer" style="opacity: 0.1;"></div>
+        <h1 class="inst-title reveal">Legado e <span>Representatividade</span></h1>
+        <p class="subheading reveal delay-200" style="color: rgba(0,0,0,0.6); max-width: 800px; margin: 0 auto; font-size: 1.25rem;">
+            Há mais de 50 anos, a APS atua como o pilar institucional da suinocultura no Paraná, conectando produtores, ciência e mercado.
+        </p>
+    </section>
+
+    <!-- History (Legado) -->
+    <section class="inst-section">
+        <div class="inst-grid">
+            <div class="inst-content reveal">
+                <div class="micro-headline">Legado e Tradição</div>
+                <h2 style="font-family: 'Space Grotesk'; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; margin-bottom: 2rem;">Fundada em <span class="highlight">1971</span> para unir o setor.</h2>
+                <div style="font-size: 1.15rem; line-height: 1.7; color: #444; display: flex; flex-direction: column; gap: 1.5rem;">
+                    <p>A Associação Paranaense de Suinocultores (APS) nasceu em 30 de março de 1971, consolidando-se como a voz estratégica e institucional do produtor paranaense.</p>
+                    <p>Com sede administrativa em Curitiba, a entidade lidera a defesa dos interesses da suinocultura em esferas governamentais e internacionais, promovendo a excelência técnica que tornou o Paraná uma potência global no setor.</p>
+                </div>
+            </div>
+            <div class="inst-image-box reveal">
+                <img src="apsonline.com.br/assets/Reunião%20de%20suinocultores%20em%20conferência.png" alt="História APS">
+            </div>
+        </div>
+
+        <div class="values-grid">
+            <div class="value-card reveal delay-100">
+                <iconify-icon icon="solar:target-bold-duotone"></iconify-icon>
+                <h3>Missão</h3>
+                <p>Promover o desenvolvimento sustentável da suinocultura, garantindo a rentabilidade e a excelência técnica dos produtores.</p>
+            </div>
+            <div class="value-card reveal delay-300">
+                <iconify-icon icon="solar:eye-bold-duotone"></iconify-icon>
+                <h3>Visão</h3>
+                <p>Consolidar o Paraná como a principal referência mundial em qualidade, sanidade e sustentabilidade na cadeia suinícola.</p>
+            </div>
+            <div class="value-card reveal delay-500">
+                <iconify-icon icon="solar:shield-check-bold-duotone"></iconify-icon>
+                <h3>Valores</h3>
+                <p>Transparência, união do setor, rigor técnico, sustentabilidade ambiental e compromisso absoluto com a sanidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Board (Governança) -->
+    <section class="board-section">
+        <div class="container-inner">
+            <div class="micro-headline">Governança</div>
+            <h2 style="font-family: 'Space Grotesk'; font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 700;">Atual <span class="highlight">Diretoria</span></h2>
+            
+            <div class="board-grid">
+                <!-- Diretoria Executiva -->
+                <div class="board-member reveal reveal-unfold">
+                    <span>Presidente</span>
+                    <h4>Jacir José Dariva</h4>
+                </div>
+                <div class="board-member reveal reveal-unfold delay-100">
+                    <span>V.P. Administrativo</span>
+                    <h4>Gilberto João Rossi</h4>
+                </div>
+                <div class="board-member reveal reveal-unfold delay-200">
+                    <span>V.P. Técnico</span>
+                    <h4>Severino Antunes Bezerra</h4>
+                </div>
+                <div class="board-member reveal reveal-unfold delay-300">
+                    <span>V.P. de Organização</span>
+                    <h4>Elói Fávero</h4>
+                </div>
+                <div class="board-member reveal reveal-unfold delay-400">
+                    <span>V.P. de Comercialização</span>
+                    <h4>Wilant Von Boogaard</h4>
+                </div>
+                <div class="board-member reveal reveal-unfold delay-500">
+                    <span>Delegado Junto a ABCS</span>
+                    <h4>Wienfried Mathias Leh</h4>
+                </div>
+
+                <!-- Conselho Fiscal Titular -->
+                <div class="board-member reveal reveal-unfold delay-600">
+                    <span>Conselho Fiscal (Titular)</span>
+                    <h4>Fernando Gavlik de Oliveira</h4>
+                </div>
+                <div class="board-member reveal reveal-unfold delay-700">
+                    <span>Conselho Fiscal (Titular)</span>
+                    <h4>Carlos Roberto Alves</h4>
+                </div>
+                <div class="board-member reveal reveal-unfold delay-800">
+                    <span>Conselho Fiscal (Titular)</span>
+                    <h4>Sérgio Luiz Barbian</h4>
+                </div>
+
+                <!-- Conselho Fiscal Suplente -->
+                <div class="board-member reveal reveal-unfold delay-900">
+                    <span>Conselho Fiscal (Suplente)</span>
+                    <h4>Edson Roberto Gusso</h4>
+                </div>
+                <div class="board-member reveal reveal-unfold delay-1000">
+                    <span>Conselho Fiscal (Suplente)</span>
+                    <h4>Jussiê Mohler</h4>
+                </div>
+                <div class="board-member reveal reveal-unfold delay-1100">
+                    <span>Conselho Fiscal (Suplente)</span>
+                    <h4>Miguel Thomaz</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (copied from index.html logic) -->
+    <footer class="main-footer reveal">
+        <div class="footer-grid-layer"></div>
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="footer-logo">
+                    <img src="apsonline.com.br/assets/logooficialaps_74b1381baa76.png" alt="APS Logo" class="logo-white-filter">
+                </a>
+                <p class="footer-description">Desde 1971, fortalecendo a suinocultura paranaense.</p>
+            </div>
+            <div class="footer-col links-col">
+                <h4 class="footer-title">Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="institucional.html">Institucional</a></li>
+                    <li><a href="index.html#events">Eventos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h4 class="footer-title">Contato</h4>
+                <ul class="contact-info">
+                    <li>(41) 3223-1207 / 99592-8094</li>
+                    <li>secretaria@apsonline.com.br</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">© 2026 APS. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+            // --- Mobile Menu Toggle ---
+            const menuTrigger = document.getElementById('menu-trigger');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-links a');
+
+            const toggleMenu = () => {
+                menuTrigger.classList.toggle('active');
+                mobileMenu.classList.toggle('open');
+                document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+            };
+
+            menuTrigger.addEventListener('click', toggleMenu);
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mobileMenu.classList.contains('open')) toggleMenu();
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
