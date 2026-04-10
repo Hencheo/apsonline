@@ -2774,55 +2774,71 @@ header {
 
 @media screen and (max-width: 768px) {
     .main-footer {
-        padding: 6rem 0 0;
+        padding: 5rem 0 0;
     }
 
     .footer-container {
         grid-template-columns: 1fr;
-        gap: 5rem;
-        padding: 0 8% 5rem;
-        text-align: center;
+        gap: 4rem;
+        padding: 0 8% 4.5rem;
+        text-align: left;
     }
 
     .footer-col {
-        align-items: center;
-        gap: 2rem;
+        align-items: flex-start;
+        gap: 1.8rem;
+    }
+
+    .brand-col {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding-bottom: 3.5rem;
     }
 
     .footer-logo img {
-        height: 50px;
+        height: 45px;
     }
 
     .footer-description {
-        font-size: 1rem;
+        font-size: 0.95rem;
         max-width: 100%;
         color: rgba(255, 255, 255, 0.4);
+        line-height: 1.7;
+    }
+
+    .footer-socials {
+        justify-content: flex-start;
+        margin-top: 0.5rem;
+    }
+
+    .footer-title {
+        font-size: 0.8rem;
+        margin-bottom: 1.5rem;
+        opacity: 0.6;
     }
 
     .footer-links {
-        gap: 1rem;
+        gap: 1.2rem;
     }
 
     .footer-links a {
         padding: 0.2rem 0;
-    }
-
-    .footer-links a:hover {
-        transform: scale(1.05);
+        font-size: 1rem;
     }
 
     .contact-info {
-        gap: 1.8rem;
+        gap: 2rem;
     }
 
     .contact-info li {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1.2rem;
+        text-align: left;
     }
 
     .contact-info iconify-icon {
         font-size: 1.3rem;
+        margin-top: 0.2rem;
     }
 
     .contact-info span {
@@ -2830,11 +2846,19 @@ header {
     }
 
     .footer-bottom {
-        padding: 2.5rem 0;
+        padding: 3rem 8%;
+    }
+
+    .footer-bottom-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+        padding: 0;
     }
 
     .legal-links {
-        gap: 2rem;
+        gap: 1.5rem;
+        flex-wrap: wrap;
     }
 }
 
