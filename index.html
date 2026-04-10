@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>APS - Associação Paranaense de Suinocultores</title>
+
+    <!-- External Assets from Design System -->
+    <link href="green-site/assets/css2_86e10c4bcbd4.css" rel="stylesheet" id="font-geist" />
+    <link href="green-site/assets/css2_8e191ef32247.css" rel="stylesheet" id="font-space-grotesk" />
+    <link href="digital-architect.aura.build/assets/css2_19fd9cc6b396.css" rel="stylesheet" id="font-inter" />
+    <script src="digital-architect.aura.build/assets/iconify-icon_d39ffc6e4c56.js"></script>
+
+    <!-- Project Styles -->
+    <link href="hero-styles.css" rel="stylesheet" />
+</head>
+
+<body class="loading-active">
+    <!-- 0. Cinematic Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+
+            <div class="preloader-logo">
+                <img src="apsonline.com.br/assets/logooficialaps_74b1381baa76.png" alt="APS Logo">
+                <div class="loader-line-container">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="hero-wrapper">
+        <!-- Header moved inside Hero to ensure it scrolls with the section -->
+        <header>
+            <a class="logo" href="#">
+                <img alt="APS Logo" class="logo-img" src="apsonline.com.br/assets/logooficialaps_74b1381baa76.png" />
+            </a>
+            <nav class="nav-links hidden md:flex">
+                <a href="institucional.html">Institucional</a>
+                <a href="#">Eventos</a>
+                <a href="#">Culinária</a>
+                <a href="#">Contato</a>
+            </nav>
+            <a class="primary-btn" href="#" style="padding: 0.8rem 1.8rem; font-size: 0.7rem;">Área do Sócio</a>
+        </header>
+
+        <!-- Mobile Menu Trigger -->
+        <button class="mobile-menu-trigger" id="menu-trigger" aria-label="Abrir Menu">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobile-menu">
+            <div class="mobile-menu-content">
+                <nav class="mobile-nav-links">
+                    <a href="institucional.html">
+                        <span class="link-num">01</span>
+                        <span class="link-text">Institucional</span>
+                        <iconify-icon icon="solar:round-alt-arrow-right-bold-duotone"></iconify-icon>
+                    </a>
+                    <a href="#events">
+                        <span class="link-num">02</span>
+                        <span class="link-text">Eventos</span>
+                        <iconify-icon icon="solar:round-alt-arrow-right-bold-duotone"></iconify-icon>
+                    </a>
+                    <a href="#">
+                        <span class="link-num">03</span>
+                        <span class="link-text">Culinária</span>
+                        <iconify-icon icon="solar:round-alt-arrow-right-bold-duotone"></iconify-icon>
+                    </a>
+                    <a href="#">
+                        <span class="link-num">04</span>
+                        <span class="link-text">Contato</span>
+                        <iconify-icon icon="solar:round-alt-arrow-right-bold-duotone"></iconify-icon>
+                    </a>
+                </nav>
+
+                <div class="mobile-menu-footer">
+                    <p class="footer-tagline">Conectando a Suinocultura Paranaense</p>
+                    <a class="primary-btn" href="#">Acessar Área do Sócio</a>
+                    <div class="mobile-socials">
+                        <iconify-icon icon="solar:camera-linear"></iconify-icon>
+                        <iconify-icon icon="solar:paper-plane-linear"></iconify-icon>
+                        <iconify-icon icon="solar:map-point-linear"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 0. Background Video -->
+        <div class="video-container">
+            <video autoplay loop muted playsinline>
+                <source src="apsonline.com.br/assets/porcos-hero.mp4" type="video/mp4" />
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+
+        <!-- 1. Architectural Grid & Beams -->
+        <div class="grid-lines">
+            <!-- Vertical Lines -->
+            <div class="grid-line-v" style="left: 8%;"></div>
+            <div class="grid-line-v" style="left: 28%;">
+                <div class="beam-v" style="animation-delay: 2s;"></div>
+            </div>
+            <div class="grid-line-v" style="left: 60%;">
+                <div class="beam-v" style="animation-delay: 5s;"></div>
+            </div>
+            <div class="grid-line-v" style="right: 8%;"></div>
+
+            <!-- Horizontal Lines -->
+            <div class="grid-line-h" style="top: 20%;"></div>
+            <div class="grid-line-h" style="top: 60%;">
+                <div class="beam-h" style="animation-delay: 3s;"></div>
+            </div>
+        </div>
+
+        <!-- 2. Hero Content -->
+        <div class="hero-content">
+            <div class="glass-panel reveal" id="hero-trigger">
+                <div class="reveal delay-100" style="margin-bottom: 2rem;">
+
+                </div>
+                <h1 class="reveal delay-200">
+                    <span class="text-mask"><span>Liderando o <span class="highlight">Futuro</span></span></span>
+                    <span class="text-mask"><span>da Suinocultura.</span></span>
+                </h1>
+                <p class="subheading reveal delay-400">
+                    Representatividade, suporte técnico e progresso para o suinocultor paranaense. Juntos, construímos
+                    uma cadeia produtiva de excelência mundial.
+                </p>
+                <div class="btn-container reveal delay-600">
+                    <a class="primary-btn" href="#">Conheça a APS</a>
+                    <a class="secondary-btn" href="#">Faça seu Cadastro</a>
+                </div>
+            </div>
+
+            <!-- Floating Info (Visionary touch) -->
+
+
+        </div>
+        <!-- 3. Section Transition Mask -->
+        <div class="hero-bottom-mask">
+            <svg preserveAspectRatio="none" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0,192L60,202.7C120,213,240,235,360,224C480,213,600,171,720,165.3C840,160,960,192,1080,181.3C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+                    fill="#F9F4E8" fill-opacity="1"></path>
+            </svg>
+        </div>
+    </main>
+    <section class="role-section">
+        <div class="role-section-grid-layer"></div>
+        <div class="global-grid light-grid">
+            <div class="grid-line-v" style="left: 8%;"></div>
+            <div class="grid-line-v" style="left: 60%;"></div>
+            <div class="grid-line-h" style="top: 30%;"></div>
+            <div class="grid-line-h" style="top: 70%;"></div>
+        </div>
+        <div class="role-container">
+            <div class="role-header">
+                <div class="micro-headline">
+                    Desde 1971 — Liderança e Tradição
+                </div>
+                <h2 style="opacity: 1; visibility: visible;">Fortalecendo a <span
+                        class="highlight-dark">suinocultura</span> paranaense</h2>
+                <p style="opacity: 1; visibility: visible;">
+                    A APS representa os suinocultores do Paraná com atuação institucional estratégica, suporte técnico
+                    ao setor e valorização da cadeia produtiva. Unimos representatividade, informação e progresso para
+                    consolidar a suinocultura paranaense como referência global.
+                </p>
+                <div class="btn-container" style="margin-top: 3rem;">
+                    <a class="primary-btn" href="institucional.html">Saiba mais sobre a APS</a>
+                </div>
+            </div>
+
+            <div class="role-grid">
+                <!-- Card 1: Representatividade (FEATURED) -->
+                <div class="role-card featured has-bg"
+                    style="background-image: url('apsonline.com.br/assets/Profissionais%20em%20colaboração%20no%20campo%20agrícola.png'); justify-content: flex-end; opacity: 1; visibility: visible; transform: none;">
+
+                    <div class="card-text-panel">
+                        <h3>Representatividade</h3>
+                        <p>Defesa institucional rigorosa e atuação constante junto aos órgãos governamentais e
+                            reguladores.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Eventos e conexão -->
+                <div class="role-card featured has-bg"
+                    style="background-image: url('apsonline.com.br/assets/Reunião%20de%20suinocultores%20em%20conferência.png'); justify-content: flex-end; opacity: 1; visibility: visible; transform: none;">
+
+                    <div class="card-text-panel">
+                        <h3>Eventos e Conexão</h3>
+                        <p>Encontros estratégicos e atualização técnica contínua para o fortalecimento do networking
+                            produtivo.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Valorização -->
+                <div class="role-card featured has-bg"
+                    style="background-image: url('apsonline.com.br/assets/ChatGPT%20Image%2010%20de%20abr.%20de%202026%2C%2012_53_42.png'); justify-content: flex-start; opacity: 1; visibility: visible; transform: none;">
+
+                    <div class="card-text-panel">
+                        <h3>Valorização da Carne</h3>
+                        <p>Ações de imagem e aproximação estratégica da cadeia suinícola com a sociedade paranaense.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prova Social / Stats -->
+            <div class="role-stats">
+                <div class="stat-item">
+                    <span class="stat-value">50+</span>
+                    <span class="stat-label">Anos de Atuação</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">100%</span>
+                    <span class="stat-label">Defesa Institucional</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">PR</span>
+                    <span class="stat-label">Nível Estadual</span>
+                </div>
+            </div>
+        </div>
+        <img class="pig-decoration"
+            src="apsonline.com.br/assets/Gemini_Generated_Image_tm0zhjtm0zhjtm0z-removebg-preview.png" alt=""
+            style="opacity: 1; visibility: visible; transform: none;">
+    </section>
+    </section>
+
+    <!-- 3. Events Section (Split Story Layout) -->
+    <section id="events" class="events-section reveal">
+        <div class="global-grid light-grid" style="opacity: 0.1;">
+            <div class="grid-line-v" style="left: 20%;"></div>
+            <div class="grid-line-v" style="left: 40%;"></div>
+            <div class="grid-line-v" style="left: 60%;"></div>
+            <div class="grid-line-v" style="left: 80%;"></div>
+        </div>
+        <div class="events-container">
+            <!-- Left: Visual Side (60%) with Background Video -->
+            <div class="events-visual">
+                <div class="section-header-top floating">
+                    <h2 class="events-title">Eventos <span>& Notícias</span></h2>
+                    <div class="title-accent"></div>
+                </div>
+
+                <video autoplay loop muted playsinline class="events-bg-video">
+                    <source src="apsonline.com.br/assets/eventoseconexao.mp4" type="video/mp4">
+                </video>
+                <div class="visual-overlay"></div>
+
+                <!-- Overlaid Image Cards (Rectangular/Square Corners) -->
+                <div class="event-cards-container">
+                    <div class="event-card-img active" data-slide="1">
+                        <img src="apsonline.com.br/assets/Captura de tela de 2026-04-10 13-15-54.png" alt="Evento 1">
+                    </div>
+                    <div class="event-card-img" data-slide="2">
+                        <img src="apsonline.com.br/assets/BANNER4315_eb111a6ed472.jpg" alt="Evento 2">
+                    </div>
+                    <div class="event-card-img" data-slide="3">
+                        <img src="apsonline.com.br/assets/diagonal_bg.png" alt="Evento 3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Content Side (40%) -->
+            <div class="events-content">
+                <div class="slides-info-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="slide-info active" data-slide="1">
+
+                        <h2 class="text-mask"><span>Campanha ABCS</span></h2>
+                        <p class="text-mask"><span>Incentivo ao consumo e valorização da carne suína em todo o
+                                território
+                                nacional.</span></p>
+
+                        <a href="https://www.maiscarnesuina.com.br/" target="_blank" class="primary-btn">Mais
+                            Detalhes</a>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide-info" data-slide="2">
+
+                        <h2 class="text-mask"><span>Encontro Estadual</span></h2>
+                        <p class="text-mask"><span>O maior fórum de debate e networking da suinocultura
+                                paranaense.</span>
+                        </p>
+                        <a href="#" class="primary-btn">Ver Programação</a>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slide-info" data-slide="3">
+
+                        <h2 class="text-mask"><span>Culinária Suína</span></h2>
+                        <p class="text-mask"><span>Explorando a versatilidade e o sabor da proteína mais consumida no
+                                mundo.</span></p>
+
+                        <a href="http://culinariasuina.blogspot.com/" target="_blank" class="primary-btn">Acessar
+                            Blog</a>
+                    </div>
+                </div>
+
+                <!-- Navigation Indicators -->
+                <div class="events-nav">
+                    <div class="nav-indicators">
+                        <div class="indicator active" data-target="1">
+                            <span class="num">01</span>
+                            <div class="progress-bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <div class="indicator" data-target="2">
+                            <span class="num">02</span>
+                            <div class="progress-bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <div class="indicator" data-target="3">
+                            <span class="num">03</span>
+                            <div class="progress-bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 4. Association CTA Section -->
+    <section id="association-cta" class="cta-section reveal">
+        <div class="role-section-grid-layer" style="opacity: 0.08;"></div>
+
+        <div class="cta-container">
+            <!-- Lado Esquerdo: Conteúdo -->
+            <div class="cta-content-left reveal">
+                <div class="cta-header">
+                    <div class="micro-headline">
+                        <span class="text-mask"><span>Liderança e Cooperação</span></span>
+                    </div>
+                    <h2 class="text-mask"><span>Fortaleça sua jornada na <span
+                                class="highlight">suinocultura.</span></span></h2>
+                    <p class="text-mask delay-200"><span>Suporte especializado para o suinocultor paranaense. Faça parte
+                            da associação que lidera o progresso técnico e institucional do setor no Paraná.</span></p>
+                </div>
+            </div>
+
+            <!-- Lado Direito: Newsletter (Bento Card) -->
+            <div class="cta-actions-card reveal delay-300">
+                <div class="micro-headline" style="margin-bottom: 0.5rem; text-align: left;">
+                    <span>Newsletter</span>
+                </div>
+                <h3 style="font-family: 'Space Grotesk'; font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">
+                    Receba nossas notícias</h3>
+
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Seu melhor e-mail..." required>
+                    <button type="submit" class="primary-btn">Cadastrar Agora</button>
+                </form>
+
+                <div class="cta-actions">
+                    <a href="#" class="secondary-btn">Ir para Área do Sócio &rarr;</a>
+                </div>
+
+                <div class="cta-footer">
+                    <div class="whatsapp-support">
+                        <iconify-icon icon="logos:whatsapp-icon"></iconify-icon>
+                        <span>Dúvidas? <a href="https://wa.me/554195928094" target="_blank">Fale conosco</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Institutional Footer -->
+    <footer class="main-footer reveal">
+        <div class="footer-grid-layer"></div>
+        <div class="footer-container">
+            <!-- Col 1: Brand -->
+            <div class="footer-col brand-col">
+                <a href="#" class="footer-logo">
+                    <img src="apsonline.com.br/assets/logooficialaps_74b1381baa76.png" alt="APS Logo"
+                        class="logo-white-filter">
+                </a>
+                <p class="footer-description">
+                    Desde 1971, liderando o progresso e a excelência técnica da suinocultura paranaense. Juntos,
+                    fortalecemos o campo.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram"><iconify-icon icon="solar:camera-linear"></iconify-icon></a>
+                    <a href="#" aria-label="LinkedIn"><iconify-icon icon="solar:letter-linear"></iconify-icon></a>
+                    <a href="#" aria-label="WhatsApp"><iconify-icon icon="logos:whatsapp-icon"></iconify-icon></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Navigation -->
+            <div class="footer-col links-col">
+                <h4 class="footer-title">Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Institucional</a></li>
+                    <li><a href="#events">Eventos e Notícias</a></li>
+                    <li><a href="#">Culinária Suína</a></li>
+                    <li><a href="#">Área do Sócio</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Contact & Office -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-title">Onde Estamos</h4>
+                <ul class="contact-info">
+                    <li>
+                        <iconify-icon icon="solar:map-point-linear"></iconify-icon>
+                        <span>Rua Conselheiro Laurindo, 809 - Salas 909/910<br>Centro, Curitiba – PR | CEP
+                            80060-100</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:phone-linear"></iconify-icon>
+                        <span>(41) 3223-1207 / (41) 99592-8094</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:letter-linear"></iconify-icon>
+                        <span>secretaria@apsonline.com.br</span>
+                    </li>
+                    <li>
+                        <iconify-icon icon="solar:clock-circle-linear"></iconify-icon>
+                        <span>Seg à Sex: 08:00–11:30 | 12:30–17:00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p class="copyright">© 2026 Associação Paranaense de Suinocultores. Todos os direitos reservados.</p>
+                <div class="legal-links">
+                    <a href="#">Privacidade</a>
+                    <a href="#">Termos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float">
+        <span class="whatsapp-label">Fale conosco no WhatsApp</span>
+        <a href="https://wa.me/554195928094" target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+            <iconify-icon icon="logos:whatsapp-icon"></iconify-icon>
+        </a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Trigger Reveal Animations
+            setTimeout(() => {
+                document.querySelectorAll('.hero-wrapper .reveal').forEach(el => {
+                    el.classList.add('active');
+                });
+            }, 100);
+
+            // Optional: Scroll reveal logic (if expanded later)
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            const video = document.querySelector('video');
+            if (video) {
+                video.play().catch(error => {
+                    console.log("Autoplay was prevented on mobile. Waiting for user interaction.");
+                    // Fallback: load video on touch if needed
+                    document.body.addEventListener('touchstart', () => {
+                        video.play();
+                    }, { once: true });
+                });
+            }
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+            // --- Events Slider Logic ---
+            let currentSlide = 1;
+            const totalSlides = 3;
+            const slideInterval = 5000; // 5 segundos
+            let autoplayTimer;
+
+            const updateSlides = (target) => {
+                currentSlide = target;
+
+                // Update Visual Cards
+                document.querySelectorAll('.event-card-img').forEach(el => {
+                    el.classList.remove('active');
+                    if (el.dataset.slide == currentSlide) el.classList.add('active');
+                });
+
+                // Update Info
+                document.querySelectorAll('.slide-info').forEach(el => {
+                    el.classList.remove('active');
+                    if (el.dataset.slide == currentSlide) el.classList.add('active');
+                });
+
+                // Update Indicators
+                document.querySelectorAll('.indicator').forEach(el => {
+                    el.classList.remove('active');
+                    if (el.dataset.target == currentSlide) el.classList.add('active');
+                });
+            };
+
+            const startAutoplay = () => {
+                clearInterval(autoplayTimer);
+                autoplayTimer = setInterval(() => {
+                    let next = currentSlide + 1;
+                    if (next > totalSlides) next = 1;
+                    updateSlides(next);
+                }, slideInterval);
+            };
+
+            // Manual Click
+            document.querySelectorAll('.indicator').forEach(el => {
+                el.addEventListener('click', () => {
+                    updateSlides(parseInt(el.dataset.target));
+                    startAutoplay(); // Restart timer on manual click
+                });
+            });
+
+            // Pause on Hover
+            const eventsContainer = document.querySelector('.events-section');
+            if (eventsContainer) {
+                eventsContainer.addEventListener('mouseenter', () => clearInterval(autoplayTimer));
+                eventsContainer.addEventListener('mouseleave', () => startAutoplay());
+            }
+
+            // --- Mobile Menu Toggle ---
+            const menuTrigger = document.getElementById('menu-trigger');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-links a');
+
+            const toggleMenu = () => {
+                menuTrigger.classList.toggle('active');
+                mobileMenu.classList.toggle('open');
+                document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+            };
+
+            menuTrigger.addEventListener('click', toggleMenu);
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mobileMenu.classList.contains('open')) toggleMenu();
+                });
+            });
+
+            // --- Header & Trigger Color Change Logic (Improved) ---
+            const heroSection = document.querySelector('.hero-wrapper');
+            const header = document.querySelector('header');
+            const headerObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        menuTrigger.classList.add('dark');
+                        header.classList.add('scrolled');
+                    } else {
+                        menuTrigger.classList.remove('dark');
+                        header.classList.remove('scrolled');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            if (heroSection) headerObserver.observe(heroSection);
+
+            // Initialize
+            startAutoplay();
+
+            // --- Preloader Removal ---
+            window.addEventListener('load', () => {
+                const preloader = document.getElementById('preloader');
+                setTimeout(() => {
+                    preloader.classList.add('loaded');
+                    document.body.classList.remove('loading-active');
+                }, 1000); // Slight delay for cinematic effect
+            });
+        });
+    </script>
+</body>
+
+</html>

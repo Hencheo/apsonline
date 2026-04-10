@@ -1,0 +1,12 @@
+{
+  "name": "aps-online",
+  "version": "1.0.0",
+  "description": "Associação Paranaense de Suinocultores - Institutional Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

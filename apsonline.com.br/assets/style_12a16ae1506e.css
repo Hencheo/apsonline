@@ -1,0 +1,122 @@
+/*config*/
+html,body{font-family:font1 !important;}
+html{overflow-x:hidden}
+
+
+
+@font-face {
+  font-family:font1;
+  src: url("Ubuntu-Regular_fbc1c0ee187f.ttf");
+}
+@font-face {
+  font-family:font2;
+  src: url("Ubuntu-Light_251bef556b73.ttf");
+}
+@font-face {
+  font-family:font3;
+  src: url("Gotham-Thin_971fc2123fac.otf");
+}
+
+
+
+.transition{-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;}
+
+a:hover{text-decoration: none;}
+ul{margin: 0; padding: 0;}
+
+.clear{width: 100%; clear: both;}
+.clear10{width: 100%; height: 10px; clear: both;}
+.clear20{width: 100%; height: 20px; clear: both;}
+.clear30{width: 100%; height: 30px; clear: both;}
+.clear40{width: 100%; height: 40px; clear: both;}
+.clear50{width: 100%; height: 50px; clear: both;}
+.clear60{width: 100%; height: 60px; clear: both;}
+.clear70{width: 100%; height: 70px; clear: both;}
+.clear80{width: 100%; height: 80px; clear: both;}
+.clear90{width: 100%; height: 90px; clear: both;}
+.clear100{width: 100%; height: 100px; clear: both;}
+
+.info-footer{font-size: 12px; color: #222}
+
+#carousel li{padding: 20px; border: solid 1px #eee;}
+
+section{padding: 60px 0}
+section h1{font-size: 45px; font-weight: bold; margin-bottom: 5px}
+section h2{font-size: 20px; font-weight: bold; margin-top: 0}
+
+/*formulários*/
+.form-group,.input-group,.form-control {width: 100%;}
+.form-control {height: 55px;background: #fff;border: 1px solid #ddd;}
+
+#formulario-orcamento{display: none;}
+
+
+/*redes sociais*/
+.contato-info .header-social .fa-facebook{color: #3176bf;}
+.contato-info .header-social .fa-twitter{color: #4fd0ea;}
+.contato-info .header-social .fa-youtube{color: #f24141;}
+.contato-info .header-social .fa-instagram{color: #bf9437;}
+
+.breadcrumbs{width: 100%; height: auto; padding: 180px 0;}
+.breadcrumbs ul{list-style: none;}
+.breadcrumbs li{float: left; margin-right: 5px; color: #fff;}
+.breadcrumbs li a{color: #fff;}
+.breadcrumbs h1{font-weight: bold; font-size: 35px; color: #fff;}
+
+/*ANIMAÇÃO*/
+[data-anime]{
+	opacity: 0;
+	transition: .3s;
+}
+
+[data-anime="show"]{
+	/*opacity: 0;*/
+}
+
+[data-anime="top"]{
+	transform:translate3d(0, 50px, 0);
+}
+
+[data-anime="bottom"]{
+	transform:translate3d(0, -50px, 0);
+}
+
+[data-anime="left"]{
+	transform:translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"]{
+	transform:translate3d(50px, 0, 0);
+}
+
+[data-anime].animate{
+	opacity: 1;
+	transform:translate3d(0px, 0px, 0px);
+}
+/*ANIMAÇÃO*/
+
+/*IE*/
+[data-anime]{
+	opacity: 1\9;
+	transform:translate3d(0px, 0px, 0px)\9;
+}
+.ie10 [data-anime]{
+ 	opacity: 1;
+	transform:translate3d(0px, 0px, 0px);
+}
+*::-ms-backdrop,[data-anime]{
+	opacity: 1;
+	transform:translate3d(0px, 0px, 0px);
+}
+/*IE*/
+
+@media (max-width: 991px) {
+
+}
+@media (min-width: 768px){
+.navbar-nav {float: right;}
+}
