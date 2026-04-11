@@ -37,10 +37,10 @@
                 <img alt="APS Logo" class="logo-img" src="apsonline.com.br/assets/logooficialaps_74b1381baa76.png" />
             </a>
             <nav class="nav-links hidden md:flex">
-                <a href="institucional.html">Institucional</a>
-                <a href="#">Eventos</a>
-                <a href="#">Culinária</a>
-                <a href="#">Contato</a>
+                <a href="#role">Institucional</a>
+                <a href="#events">Eventos</a>
+                <a href="http://culinariasuina.blogspot.com/" target="_blank">Culinária</a>
+                <a href="#footer">Contato</a>
             </nav>
             <a class="primary-btn" href="#" style="padding: 0.8rem 1.8rem; font-size: 0.7rem;">Área do Sócio</a>
         </header>
@@ -58,7 +58,7 @@
         <div class="mobile-menu-overlay" id="mobile-menu">
             <div class="mobile-menu-content">
                 <nav class="mobile-nav-links">
-                    <a href="institucional.html">
+                    <a href="#role">
                         <span class="link-num">01</span>
                         <span class="link-text">Institucional</span>
                         <iconify-icon icon="solar:round-alt-arrow-right-bold-duotone"></iconify-icon>
@@ -68,12 +68,12 @@
                         <span class="link-text">Eventos</span>
                         <iconify-icon icon="solar:round-alt-arrow-right-bold-duotone"></iconify-icon>
                     </a>
-                    <a href="#">
+                    <a href="http://culinariasuina.blogspot.com/" target="_blank">
                         <span class="link-num">03</span>
                         <span class="link-text">Culinária</span>
                         <iconify-icon icon="solar:round-alt-arrow-right-bold-duotone"></iconify-icon>
                     </a>
-                    <a href="#">
+                    <a href="#footer">
                         <span class="link-num">04</span>
                         <span class="link-text">Contato</span>
                         <iconify-icon icon="solar:round-alt-arrow-right-bold-duotone"></iconify-icon>
@@ -83,11 +83,7 @@
                 <div class="mobile-menu-footer">
                     <p class="footer-tagline">Conectando a Suinocultura Paranaense</p>
                     <a class="primary-btn" href="#">Acessar Área do Sócio</a>
-                    <div class="mobile-socials">
-                        <iconify-icon icon="solar:camera-linear"></iconify-icon>
-                        <iconify-icon icon="solar:paper-plane-linear"></iconify-icon>
-                        <iconify-icon icon="solar:map-point-linear"></iconify-icon>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -134,7 +130,7 @@
                     uma cadeia produtiva de excelência mundial.
                 </p>
                 <div class="btn-container reveal delay-600">
-                    <a class="primary-btn" href="#">Conheça a APS</a>
+                    <a class="primary-btn" href="institucional.html">Conheça a APS</a>
                     <a class="secondary-btn" href="#">Faça seu Cadastro</a>
                 </div>
             </div>
@@ -152,7 +148,7 @@
             </svg>
         </div>
     </main>
-    <section class="role-section">
+    <section id="role" class="role-section">
         <div class="role-section-grid-layer"></div>
         <div class="global-grid light-grid">
             <div class="grid-line-v" style="left: 8%;"></div>
@@ -254,78 +250,22 @@
                 </video>
                 <div class="visual-overlay"></div>
 
-                <!-- Overlaid Image Cards (Rectangular/Square Corners) -->
-                <div class="event-cards-container">
-                    <div class="event-card-img active" data-slide="1">
-                        <img src="apsonline.com.br/assets/Captura de tela de 2026-04-10 13-15-54.png" alt="Evento 1">
-                    </div>
-                    <div class="event-card-img" data-slide="2">
-                        <img src="apsonline.com.br/assets/BANNER4315_eb111a6ed472.jpg" alt="Evento 2">
-                    </div>
-                    <div class="event-card-img" data-slide="3">
-                        <img src="apsonline.com.br/assets/diagonal_bg.png" alt="Evento 3">
-                    </div>
+                <!-- Dynamic Image Cards -->
+                <div class="event-cards-container" id="event-images">
+                    <!-- Loaded via JS -->
                 </div>
             </div>
 
             <!-- Right: Content Side (40%) -->
             <div class="events-content">
-                <div class="slides-info-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="slide-info active" data-slide="1">
-
-                        <h2 class="text-mask"><span>Campanha ABCS</span></h2>
-                        <p class="text-mask"><span>Incentivo ao consumo e valorização da carne suína em todo o
-                                território
-                                nacional.</span></p>
-
-                        <a href="https://www.maiscarnesuina.com.br/" target="_blank" class="primary-btn">Mais
-                            Detalhes</a>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="slide-info" data-slide="2">
-
-                        <h2 class="text-mask"><span>Encontro Estadual</span></h2>
-                        <p class="text-mask"><span>O maior fórum de debate e networking da suinocultura
-                                paranaense.</span>
-                        </p>
-                        <a href="#" class="primary-btn">Ver Programação</a>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="slide-info" data-slide="3">
-
-                        <h2 class="text-mask"><span>Culinária Suína</span></h2>
-                        <p class="text-mask"><span>Explorando a versatilidade e o sabor da proteína mais consumida no
-                                mundo.</span></p>
-
-                        <a href="http://culinariasuina.blogspot.com/" target="_blank" class="primary-btn">Acessar
-                            Blog</a>
-                    </div>
+                <div class="slides-info-wrapper" id="event-info">
+                    <!-- Loaded via JS -->
                 </div>
 
                 <!-- Navigation Indicators -->
                 <div class="events-nav">
-                    <div class="nav-indicators">
-                        <div class="indicator active" data-target="1">
-                            <span class="num">01</span>
-                            <div class="progress-bar">
-                                <div class="fill"></div>
-                            </div>
-                        </div>
-                        <div class="indicator" data-target="2">
-                            <span class="num">02</span>
-                            <div class="progress-bar">
-                                <div class="fill"></div>
-                            </div>
-                        </div>
-                        <div class="indicator" data-target="3">
-                            <span class="num">03</span>
-                            <div class="progress-bar">
-                                <div class="fill"></div>
-                            </div>
-                        </div>
+                    <div class="nav-indicators" id="event-nav">
+                        <!-- Loaded via JS -->
                     </div>
                 </div>
             </div>
@@ -377,7 +317,7 @@
     </section>
 
     <!-- 5. Institutional Footer -->
-    <footer class="main-footer reveal">
+    <footer id="footer" class="main-footer reveal">
         <div class="footer-grid-layer"></div>
         <div class="footer-container">
             <!-- Col 1: Brand -->
@@ -401,11 +341,11 @@
             <div class="footer-col links-col">
                 <h4 class="footer-title">Navegação</h4>
                 <ul class="footer-links">
-                    <li><a href="#">Institucional</a></li>
-                    <li><a href="#events">Eventos e Notícias</a></li>
-                    <li><a href="#">Culinária Suína</a></li>
+                    <li><a href="#role">Institucional</a></li>
+                    <li><a href="#events" class="active">Eventos e Notícias</a></li>
+                    <li><a href="http://culinariasuina.blogspot.com/" target="_blank">Culinária Suína</a></li>
                     <li><a href="#">Área do Sócio</a></li>
-                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#footer">Fale Conosco</a></li>
                 </ul>
             </div>
 
@@ -484,57 +424,107 @@
 
             document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+            // --- Events Dynamic Loading ---
+            const loadEvents = async () => {
+                try {
+                    const response = await fetch('events.json');
+                    const events = await response.json();
+                    
+                    const imagesContainer = document.getElementById('event-images');
+                    const infoContainer = document.getElementById('event-info');
+                    const navContainer = document.getElementById('event-nav');
+                    
+                    imagesContainer.innerHTML = '';
+                    infoContainer.innerHTML = '';
+                    navContainer.innerHTML = '';
+                    
+                    events.forEach((event, index) => {
+                        const slideNum = index + 1;
+                        const activeClass = index === 0 ? 'active' : '';
+                        
+                        // Image Card
+                        imagesContainer.innerHTML += `
+                            <div class="event-card-img ${activeClass}" data-slide="${slideNum}">
+                                <img src="${event.image}" alt="${event.title}">
+                            </div>
+                        `;
+                        
+                        // Info Content
+                        infoContainer.innerHTML += `
+                            <div class="slide-info ${activeClass}" data-slide="${slideNum}">
+                                <h2 class="text-mask"><span>${event.title}</span></h2>
+                                <p class="text-mask"><span>${event.description}</span></p>
+                                <a href="${event.link}" target="_blank" class="primary-btn">Mais Detalhes</a>
+                            </div>
+                        `;
+                        
+                        // Navigation Indicator
+                        navContainer.innerHTML += `
+                            <div class="indicator ${activeClass}" data-target="${slideNum}">
+                                <span class="num">${String(slideNum).padStart(2, '0')}</span>
+                                <div class="progress-bar">
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    
+                    // Re-initialize slider logic with new elements
+                    initSlider(events.length);
+                } catch (err) {
+                    console.error('Error loading events:', err);
+                }
+            };
+
             // --- Events Slider Logic ---
             let currentSlide = 1;
-            const totalSlides = 3;
-            const slideInterval = 5000; // 5 segundos
+            let slideInterval = 5000;
             let autoplayTimer;
 
-            const updateSlides = (target) => {
-                currentSlide = target;
+            const initSlider = (totalSlides) => {
+                if (totalSlides === 0) return;
 
-                // Update Visual Cards
-                document.querySelectorAll('.event-card-img').forEach(el => {
-                    el.classList.remove('active');
-                    if (el.dataset.slide == currentSlide) el.classList.add('active');
-                });
+                const updateSlides = (target) => {
+                    currentSlide = target;
+                    document.querySelectorAll('.event-card-img').forEach(el => {
+                        el.classList.toggle('active', el.dataset.slide == currentSlide);
+                    });
+                    document.querySelectorAll('.slide-info').forEach(el => {
+                        el.classList.toggle('active', el.dataset.slide == currentSlide);
+                    });
+                    document.querySelectorAll('.indicator').forEach(el => {
+                        el.classList.toggle('active', el.dataset.target == currentSlide);
+                    });
+                };
 
-                // Update Info
-                document.querySelectorAll('.slide-info').forEach(el => {
-                    el.classList.remove('active');
-                    if (el.dataset.slide == currentSlide) el.classList.add('active');
-                });
+                const startAutoplay = () => {
+                    clearInterval(autoplayTimer);
+                    autoplayTimer = setInterval(() => {
+                        let next = currentSlide + 1;
+                        if (next > totalSlides) next = 1;
+                        updateSlides(next);
+                    }, slideInterval);
+                };
 
-                // Update Indicators
+                // Manual Click
                 document.querySelectorAll('.indicator').forEach(el => {
-                    el.classList.remove('active');
-                    if (el.dataset.target == currentSlide) el.classList.add('active');
+                    el.addEventListener('click', () => {
+                        updateSlides(parseInt(el.dataset.target));
+                        startAutoplay();
+                    });
                 });
+
+                // Pause on Hover
+                const eventsContainer = document.querySelector('.events-section');
+                if (eventsContainer) {
+                    eventsContainer.addEventListener('mouseenter', () => clearInterval(autoplayTimer));
+                    eventsContainer.addEventListener('mouseleave', () => startAutoplay());
+                }
+
+                startAutoplay();
             };
 
-            const startAutoplay = () => {
-                clearInterval(autoplayTimer);
-                autoplayTimer = setInterval(() => {
-                    let next = currentSlide + 1;
-                    if (next > totalSlides) next = 1;
-                    updateSlides(next);
-                }, slideInterval);
-            };
-
-            // Manual Click
-            document.querySelectorAll('.indicator').forEach(el => {
-                el.addEventListener('click', () => {
-                    updateSlides(parseInt(el.dataset.target));
-                    startAutoplay(); // Restart timer on manual click
-                });
-            });
-
-            // Pause on Hover
-            const eventsContainer = document.querySelector('.events-section');
-            if (eventsContainer) {
-                eventsContainer.addEventListener('mouseenter', () => clearInterval(autoplayTimer));
-                eventsContainer.addEventListener('mouseleave', () => startAutoplay());
-            }
+            loadEvents();
 
             // --- Mobile Menu Toggle ---
             const menuTrigger = document.getElementById('menu-trigger');
@@ -547,7 +537,7 @@
                 document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
             };
 
-            menuTrigger.addEventListener('click', toggleMenu);
+            if (menuTrigger) menuTrigger.addEventListener('click', toggleMenu);
 
             mobileLinks.forEach(link => {
                 link.addEventListener('click', () => {
@@ -561,19 +551,16 @@
             const headerObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (!entry.isIntersecting) {
-                        menuTrigger.classList.add('dark');
-                        header.classList.add('scrolled');
+                        if (menuTrigger) menuTrigger.classList.add('dark');
+                        if (header) header.classList.add('scrolled');
                     } else {
-                        menuTrigger.classList.remove('dark');
-                        header.classList.remove('scrolled');
+                        if (menuTrigger) menuTrigger.classList.remove('dark');
+                        if (header) header.classList.remove('scrolled');
                     }
                 });
             }, { threshold: 0.1 });
 
             if (heroSection) headerObserver.observe(heroSection);
-
-            // Initialize
-            startAutoplay();
 
             // --- Preloader Removal ---
             window.addEventListener('load', () => {
